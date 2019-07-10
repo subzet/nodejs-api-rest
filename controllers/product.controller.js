@@ -19,7 +19,7 @@ exports.product_create = function (req, res) {
             res.send({result: {id : product.id},
                       clientMessage: 'Product created!'})
         })
-    };
+}
 
 exports.product_details = function(req,res){
     Product.findById(req.params.id, function(err,product){
